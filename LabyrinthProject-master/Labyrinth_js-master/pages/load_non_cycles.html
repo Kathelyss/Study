@@ -1,0 +1,50 @@
+﻿<div id="head_kont">
+<h3 align="center">Вы выбрали задание на лабиринты без циклов</h3>
+    <p>Задание:<ol><li>Пройдите лабиринт персонажем (фиолетовая клетка) до конца (зеленая клетка)</li><li>Рассчитайте вероятность правильного прохождения лабиринта с первого раза</li></ol></p>
+		<p>Примечание: Для перемещения песонажа используйте стрелки или клавиши WASD. Вторая часть задания откроется после прохождения первой. Можете воспользоваться подсказкой, нажав клавишу "H" (Help)</p>
+</div>
+
+<div id="link1">
+  <a href="#" onclick="
+  $('#head_kont').html('Загрузка...').Load('#head_kont', 'pages/load_cycles.html');
+  $('#link1').html('Загрузка...').Load('#link1', 'pages/load_cycles.html');
+  $('#link2').html('Загрузка...').Load('#link2', 'pages/load_cycles.html');
+	$('#kont1').html('Загрузка...').Load('#kont1', 'pages/load_cycles.html');
+  $('#kont2').html('Загрузка...').Load('#kont2', 'pages/load_cycles.html');
+  return false;
+	"><div id="link_cycles">Задания на лабиринты с циклами</div></a>
+</div>
+
+<div id="link2">
+  <a href="#" onclick="
+  $('#head_kont').html('Загрузка...').Load('#head_kont', 'pages/load_main.html');
+	$('#link1').html('Загрузка...').Load('#link1', 'pages/load_main.html');
+	$('#link2').html('Загрузка...').Load('#link2', 'pages/load_main.html');
+	$('#kont1').html('Загрузка...').Load('#kont1', 'pages/load_main.html');
+	$('#kont2').html('Загрузка...').Load('#kont2', 'pages/load_main.html');
+	return false;
+	"><div id="link_non_cycles">Вернуться на главную страницу</div></a>
+</div>
+
+<div id="kont1">
+<form action="" method="get" name="f_size"> 
+<p><b>Выберите уровень сложности лабиринта:</b></p>
+<p><input name="size" type="radio" value="5" checked>Легкий (5x5)</p>
+<p><input name="size" type="radio" value="10">Средний(10x10)</p>
+<p><input name="size" type="radio" value="15">Сложный (15x15)</p>
+<input name="" type="button" value="Выбрать" onClick="$('#lab').html('Загрузка...').Load('*', 'pages/lab_non_cycles.html');"> 
+</form>
+<p><div id="lab"></div></p>
+<div id="answer"style="display:none"></div>
+</div>
+<div id="kont2">Поле для ввода ответа откроется после того, как лабиринт будет пройден</div>
+
+<div id="kont2win">
+<p>Поздравляем с успешным похождением лабиринта!</p>
+<p>Посчитайте вероятность и запишите в поле знаменатель дроби</p>
+<form action="" method="get" name="answer">
+______1______<br>
+<input name="answ" type="text"><input name="" type="button" value="Проверить" onClick="$('#answ').html('Загрузка...').Load('*', 'pages/answer.html');">
+<div id="answ" ></div>
+</form> 
+</div>

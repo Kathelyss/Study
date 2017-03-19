@@ -1,0 +1,15 @@
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\bin\Debug\Triangulation_.exe.config
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\bin\Debug\Triangulation_.exe
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\bin\Debug\Triangulation_.pdb
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.csprojResolveAssemblyReference.cache
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.Properties.Resources.resources
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.csproj.GenerateResource.Cache
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.exe
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.pdb
+c:\users\кэйтилисс\documents\visual studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.Triangulation_Form.resources
+C:\Users\Кэйтилисс\Documents\Visual Studio 2015\Projects\Triangulation\Triangulation_\bin\Debug\Triangulation_.exe.manifest
+C:\Users\Кэйтилисс\Documents\Visual Studio 2015\Projects\Triangulation\Triangulation_\bin\Debug\Triangulation_.application
+C:\Users\Кэйтилисс\Documents\Visual Studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.exe.manifest
+C:\Users\Кэйтилисс\Documents\Visual Studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.application
+C:\Users\Кэйтилисс\Documents\Visual Studio 2015\Projects\Triangulation\Triangulation_\bin\Debug\System.Net.Http.dll
+C:\Users\Кэйтилисс\Documents\Visual Studio 2015\Projects\Triangulation\Triangulation_\obj\Debug\Triangulation_.Segment.resources

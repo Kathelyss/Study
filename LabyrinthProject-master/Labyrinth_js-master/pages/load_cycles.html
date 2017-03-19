@@ -1,0 +1,68 @@
+﻿<div id="head_kont">
+<h3 align="center">Вы выбрали задание на лабиринты с циклами</h3>
+    <p>Задание:<ol><li>Постройте граф лабиринта</li></ol></p>
+    </div>
+</div>
+
+<div id="link1">
+  <a href="#" onclick="
+  $('#head_kont').html('Загрузка...').Load('#head_kont', 'pages/load_main.html');
+	$('#link1').html('Загрузка...').Load('#link1', 'pages/load_main.html');
+	$('#link2').html('Загрузка...').Load('#link2', 'pages/load_main.html');
+	$('#kont1').html('Загрузка...').Load('#kont1', 'pages/load_main.html');
+	$('#kont2').html('Загрузка...').Load('#kont2', 'pages/load_main.html');
+	return false;
+	"><div id="link_cycles">Вернуться на главную страницу</div></a>
+</div>
+
+<div id="link2">
+  <a href="#" onclick="
+  $('#head_kont').html('Загрузка...').Load('#head_kont', 'pages/load_non_cycles.html');
+  $('#link1').html('Загрузка...').Load('#link1', 'pages/load_non_cycles.html');
+  $('#link2').html('Загрузка...').Load('#link2', 'pages/load_non_cycles.html');
+	$('#kont1').html('Загрузка...').Load('#kont1', 'pages/load_non_cycles.html');
+  $('#kont2').html('Загрузка...').Load('#kont2', 'pages/load_non_cycles.html');
+  return false;
+	"><div id="link_non_cycles">Задания на лабиринты без циклов</div></a>
+</div>
+
+<div id="kont1">
+<form action="" method="get" name="f_size"> 
+<p><b>Выберите уровень сложности лабиринта:</b></p>
+<p><input name="size" type="radio" value="25" checked>Легкий (25x25)</p>
+<p><input name="size" type="radio" value="30">Средний (35x35)</p>
+<p><input name="size" type="radio" value="35">Сложный (45x45)</p>
+<input name="" type="button" value="Выбрать" onClick="$('#kont2').html('Загрузка...').Load('#kont2win', 'pages/load_cycles.html');
+																											$('#lab').html('Загрузка...').Load('*', 'pages/lab_cycles.html');"> 
+</form>
+<p><div id="lab"></div></p>
+</div>
+
+<div id="kont2">
+<p>Задание появится после генерации либиринта</p>
+</div>
+
+<div id="kont2win">
+<p>Постройте граф лабиринта</p>
+<p>Для создания и удаления связей между вершинами графа введите их номера в соответствующие поля и нажмите кнопку с желаемым действием</p>
+<form action="" method="get" name="edge">
+<p><div id="123"></div>
+<input name="to" type="text"> Вершина №1<br>
+<input name="from" type="text"> Вершина №2</p>
+<input name="" type="button" value="Добавить связь" onClick="add_edge(document.edge.from.value, document.edge.to.value);">
+<input name="" type="button" value="Удалить связь" onClick="remove_edge(document.edge.from.value, document.edge.to.value);">
+</form>
+<br>
+<canvas id="viewport_1" width="450" height="450"></canvas>
+<script src="js/graph.js"></script>
+<input name="" type="button" value="Проверить" onClick="verify_all(sys);">
+<div id="answ"></div>
+<p>Можете получить помощь в виде номеров комнат и их связей с другими комнатами</p>
+<form action="" method="get" name="answer">
+<input name="" type="button" value="Подсказка" onClick="javascript: var myEl = document.getElementById('demo');
+																																		myEl.style.display = ''">
+<input name="" type="button" value="Спрятать подсказку" onClick="javascript: var myEl = document.getElementById('demo');
+																																		myEl.style.display = 'none'">
+<p id="demo" style="display:none"></p>
+</form>
+</div>
