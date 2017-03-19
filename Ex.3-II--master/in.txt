@@ -1,0 +1,9 @@
+if(*element=='&'&&*(element+1)=='&')is_expression=true;
+if(bracket!=null&&lastbracket==nullptr&&checker==0){
+last_closing_bracket=element;
+break;
+}
+k(l!m)lu*%#
+dse(h&&v)-+^^^
+(q||g)lkj_cxdcfghjk*
+hghg(hail|kill&kill!=js;k
